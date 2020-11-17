@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=PicoMotionshot
+Comment=Take motion captures from Pico Neo 2 headset
+Exec=/usr/bin/x-terminal-emulator -e "/opt/PicoMotionshot/PicoMotionshot.sh"
+Icon=/opt/PicoMotionshot/Icon.png
+Terminal=false
+Type=Application
+Categories=Development
+Actions=setup;reset;
+
+[Desktop Action setup]
+Name=Open Port 5555 (need cable)
+Exec=/usr/bin/x-terminal-emulator -e "/opt/PicoMotionshot/PicoSetup.sh"
+
+[Desktop Action reset]
+Name=Close Port 5555
+Exec=/usr/bin/x-terminal-emulator -e "/opt/PicoMotionshot/PicoFix.sh"

@@ -16,7 +16,7 @@ Before using, install Android Studio with the Android SDK Platform-Tools.
 
 With a cable connection to the device, run:
 
-cd /home/USERNAME/Android/Sdk/platform-tools/ && ./adb shell ifconfig
+```cd /home/USERNAME/Android/Sdk/platform-tools/ && ./adb shell ifconfig```
 
 The IP address to use in the .sh file is the inet addr ip under wlan0
 
